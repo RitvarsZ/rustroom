@@ -1,0 +1,15 @@
+server:
+
+clients: []
+
+receives message on socket. [type][length][data]
+can we infer the client from the TcpSocket, knowing that client struct has it assigned? 
+What if listen through the client struct?
+
+-------------------
+client:
+
+send message to server: [type][length][data]
+type: 4 bytes
+length: 4 bytes
+data: length bytes
